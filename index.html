@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/rfc6570/rfc6570.js"></script>
+    <script src="bower_components/angular-hal/angular-hal.js"></script>so
+
+    <script>
+        angular.module("ferramentas2", ["angular-hal"])
+        angular.module("ferramentas2")
+                .controller("ctrl",function($scope, halClient){
+                    halClient.$get("rest/").then(function(recurso){
+                        $scope.recurso = recurso;
+                    });
+                })
+    </script>
+
+</head>
+<body ng-app="ferramentas2">
+
+<div ng-controller="ctrl">
+    teste 123 <br/>
+    {{recurso}}
+</div>
+
+</body>
+</html>

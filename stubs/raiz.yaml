@@ -1,0 +1,23 @@
+- request:
+    url: ^/rest/$
+    method: GET
+  response:
+    status: 200
+    headers:
+      content-type: text
+    body: |
+      {
+        "nome":"teste5",
+        "_links" : {
+          "self": {
+            "href": "http://localhost:8882/rest/"
+          },
+
+          "projetos": {
+             "href": "http://localhost:8882/rest/projetos"
+          },
+          "tarefas": {
+              "href": "http://localhost:8882/rest/tarefas"
+          }
+        }
+      }

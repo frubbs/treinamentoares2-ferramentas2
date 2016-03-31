@@ -1,0 +1,53 @@
+- request:
+    url: ^/rest/projetos$
+    method: GET
+  response:
+    status: 200
+    headers:
+      content-type: application/json+hal
+    body: |
+      {
+        "_links": {
+          "self": {
+            "href": "http://localhost:8882/rest/projetos"
+          }
+        }
+      }
+- request:
+    url: ^/rest/$
+    method: GET
+  response:
+    status: 200
+    headers:
+      content-type: text
+    body: |
+      {
+        "nome":"teste5",
+        "_links" : {
+          "self": {
+            "href": "http://localhost:8882/rest/"
+          },
+
+          "projetos": {
+             "href": "http://localhost:8882/rest/projetos"
+          },
+          "tarefas": {
+              "href": "http://localhost:8882/rest/tarefas"
+          }
+        }
+      }
+- request:
+    url: ^/rest/tarefas$
+    method: GET
+  response:
+    status: 200
+    headers:
+      content-type: application/json+hal
+    body: |
+      {
+        "_links": {
+          "self": {
+            "href": "http://localhost:8882/rest/tarefas"
+          }
+        }
+      }

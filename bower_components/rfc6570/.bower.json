@@ -1,0 +1,14 @@
+{
+  "name": "rfc6570",
+  "main": "rfc6570.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "_source": "art://elmerbulthuis/rfc6570",
+  "_target": "~0.1",
+  "_release": "v0.1.8",
+  "version": "0.1.8",
+  "_originalSource": "rfc6570"
+}

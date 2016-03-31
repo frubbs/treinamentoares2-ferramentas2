@@ -1,0 +1,6 @@
+{
+  "resolvers": [
+    "bower-art-resolver"
+  ],
+  "registry": "http://artifactory/artifactory/api/bower/bower"
+}
